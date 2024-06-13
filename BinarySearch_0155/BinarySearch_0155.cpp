@@ -32,6 +32,7 @@ public:
 
 	void insert(string element) // insert a node in binary search tree
 	{
+		Node* newNode = new Node(element, nullptr, nullptr); //Allcote memory for the new node
 
 	}
 };
