@@ -41,7 +41,7 @@ public:
 		Node* currentNode = nullptr;
 		search(element, parent, currentNode); // locate the node which will be to parent of the node
 
-		if (parent == nullptr)
+		if (parent == nullptr) // if the parent is NULL (Tree is Empty
 		{
 
 		}
