@@ -41,9 +41,19 @@ public:
 		Node* currentNode = nullptr;
 		search(element, parent, currentNode); // locate the node which will be to parent of the node
 
-		if (parent == nullptr) // if the parent is NULL (Tree is Empty
+		if (parent == nullptr) // if the parent is NULL (Tree is Empty)
 		{
+			ROOT = newNode;  // Make the new node root
+			return; // exit
 
+		}
+		if (element < parent->info) // if the value in the data field of the new node is last than that
+		{
+			parent->leftchild = newNode; // make the left child of the parent point to the new node
+		}
+		else if (element > parent->info) // if the value in the data field in the new node is greater
+		{
+			parent->rightchild = newNode;  // make the right child of the parent point to the new node
 		}
 	}
 };
