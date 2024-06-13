@@ -34,6 +34,7 @@ public:
 	{
 		Node* newNode = new Node(element, nullptr, nullptr); //Allcote memory for the new node
 		newNode->info = element;  // Assign value to the data field the new Node
+		newNode->leftchild = nullptr; // Make the left child of the new node point to null
 
 	}
 };
