@@ -37,6 +37,14 @@ public:
 		newNode->leftchild = nullptr; // Make the left child of the new node point to null
 		newNode->rightchild = nullptr; // Make the right child of the new node point to null
 
+		Node* parent = nullptr;
+		Node* currentNode = nullptr;
+		search(element, parent, currentNode); // locate the node which will be to parent of the node
+
+		if (parent == nullptr)
+		{
+
+		}
 	}
 };
 
