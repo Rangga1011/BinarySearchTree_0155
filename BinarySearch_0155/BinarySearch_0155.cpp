@@ -29,5 +29,10 @@ public:
 	{
 		ROOT = nullptr; // instalizing Root Null
 	}
+
+	void insert(string element) // insert a node in binary search tree
+	{
+
+	}
 };
 
